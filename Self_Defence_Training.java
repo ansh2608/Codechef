@@ -1,18 +1,32 @@
-import java.util.Scanner;
 
-public class Self_Defence_Training {
-    public static void main(String[] args) {
-        int count = 0 ;
-        Scanner sc = new Scanner(System.in);
-        int T = sc.nextInt();
-        while(T--!=0) {
-            int N = sc.nextInt();
-            while(N--!=0) {
-                int A = sc.nextInt();
-                if (A>=10 && A<=60) count++;
-            }
-            System.out.println(count);
-            count =  0;
-        }
-    }
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+/* Name of the class has to be "Main" only if the class is public. */
+
+/* Name of the class has to be "Main" only if the class is public. */
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		// your code goes here
+		Scanner sc = new Scanner(System.in);
+		int t=sc.nextInt();
+		for(int l=1;l<=t;l++)
+		{
+		    int count=0;
+		    int n=sc.nextInt();
+		    int[] a=new int[n];
+		    for(int i=0;i<n;i++)
+		    {
+		        a[i]=sc.nextInt();
+		        if(a[i]>=10&&a[i]<=60)
+		        {
+		            count++;
+		        }
+		    }
+		    System.out.println(count);
+		}
+	}
 }
