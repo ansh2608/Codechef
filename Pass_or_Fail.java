@@ -1,26 +1,26 @@
-/* package codechef; // don't place package name! */
+import java.util.Scanner;
 
-import java.util.*;
-import java.lang.*;
-import java.io.*;
+public class Pass_or_Fail {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int t=sc.nextInt();
+        for(int i=1;i<=t;i++)
+        {
+            int n=sc.nextInt();
+            int x=sc.nextInt();
+            int p=sc.nextInt();
+            int marks=x*3;
+            int ic=n-x;
+            int re=marks-ic;
+            if(re>=p)
+            {
+                System.out.println("PASS");
+            }
+            else
+            {
+                System.out.println("FAIL");
+            }
 
-/* Name of the class has to be "Main" only if the class is public. */
-class Codechef
-{
-	public static void main (String[] args) throws java.lang.Exception
-	{
-		Scanner sc= new Scanner(System.in);
-		int n= sc.nextInt();
-		for (int i=0;i<n;i++){
-		    int x = sc.nextInt();
-		    int y = sc.nextInt();
-		    int z = sc.nextInt();
-		    
-		    int marks = y*3-(x-y);
-		    if(marks>=z)
-		        System.out.println("PASS");
-		    else
-		        System.out.println("FAIL");
-		}
-	}
+        }
+    }
 }
