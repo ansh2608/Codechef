@@ -1,15 +1,10 @@
-import java.util.*;
-import java.lang.*;
-import java.io.*;
+import java.util.Scanner;
 
-/* Name of the class has to be "Main" only if the class is public. */
-class Codechef
-{
-	public static void main (String[] args) throws java.lang.Exception
-	{
-		Scanner sc=new Scanner(System.in);
-		int n=sc.nextInt();
-		int k =n*n;
-		System.out.println(k/2);
-	}
+public class Black_cells_in_a_chessboard {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int n= scan.nextInt();
+        int x = n/2;
+        System.out.println(n*x);
+    }
 }
