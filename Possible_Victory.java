@@ -1,20 +1,14 @@
-class Codechef
-{
-	public static void main (String[] args) throws java.lang.Exception
-	{
-		// your code goes here
-		Scanner s = new Scanner(System.in);
-		int r = s.nextInt();
-		int o =s.nextInt();
-		int c = s.nextInt();
-		
-		int needover = 20-o;
-		int runneed = r-c;
-		int canscore = needover*6*6;
-		
-		if(canscore>runneed)
-		System.out.println("Yes");
-		else
-		System.out.println("No");
-	}
+import java.util.Scanner;
+
+public class Possible_Victory {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int r = sc.nextInt();
+        int o = sc.nextInt();
+        int c = sc.nextInt();
+        if((20-o)*(6)*6 > r-c)
+            System.out.println("yes");
+        else
+            System.out.println("no");
+    }
 }
