@@ -10,7 +10,7 @@ public class Turn_It {
             int a=sc.nextInt();
             int s=sc.nextInt();
             int ans=u*u - 2*a*s;
-            if (ans<=v*v) System.out.println("Yes");
+            if (Math.pow(v,2) >= Math.pow(u,2)-2*a*s) System.out.println("Yes");
             else System.out.println("No");
         }
     }
