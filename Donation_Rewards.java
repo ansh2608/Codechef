@@ -9,7 +9,6 @@ public class Donation_Rewards {
             if (m>6) System.out.println("gold");
             else if(m<=3) System.out.println("bronze");
             else System.out.println("silver");
-            }
         }
     }
 }
